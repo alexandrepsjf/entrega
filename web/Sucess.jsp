@@ -1,67 +1,131 @@
-<%-- 
-    Document   : contatoSucesso
-    Created on : 29/03/2018, 09:14:53
-    Author     : Aluno
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%> 
+<%@page contentType="text/html" pageEncoding="utf-8"%>
+<%--
+The taglib directive below imports the JSTL library. If you uncomment it,
+you must also add the JSTL library to the project. The Add Library... action
+on Libraries node in Projects view can be used to add the JSTL 1.1 library.
+--%>
+<%--
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
 --%>
 
-<%@page contentType="text/html" pageEncoding="windows-1252"%>
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>JSP Page</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Builder</title>
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <!-- Owl Carousel -->
+        <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+        <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+        <!-- Magnific Popup -->
+        <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+
+
+        <!-- Custom stlylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/animate.min.css">
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
+
     <body>
-        <h1>Realizado com sucesso </h1>
-        <a href="index.jsp" class="btn red"><button>Voltar</button></a>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var form = $('#formCadastro');
-        form.submit(function (e) {
-            e.preventDefault();
-            $.ajax({
-                url: "./FrontController?action=MudarEstadoEntreguePedido",
-                type: 'post',
-                context: document.body,
-                data: form.serialize(),
-                success: function (data) {
-                    if (data.substring(0, 4) === 'erro') {
-                        var cabecalho = 'Erro!';
-                        var tipo = 'error';
-                        var mensagem = data.substring(4, 1000);
-                        var time = 10000;
-                    } else {
-                        var cabecalho = 'Sucesso!';
-                        var tipo = 'success';
-                        var mensagem = data.substring(4, 1000);
-                        var time = 3000;
-                    }
-                    $.toast({
-                        text: mensagem, // Text that is to be shown in the toast
-                        heading: cabecalho, // Optional heading to be shown on the toast
-                        icon: tipo, // Type of toast icon
-                        showHideTransition: 'fade', // fade, slide or plain
-                        allowToastClose: true, // Boolean value true or false
-                        hideAfter: time, // false to make it sticky or number representing the miliseconds as time after which toast needs to be hidden
-                        stack: 5, // false if there should be only one toast at a time or a number representing the maximum number of toasts to be shown at a time
-                        position: {left: 'auto', right: 30, top: 30, bottom: 'auto'}, // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values
-                        textAlign: 'left', // Text alignment i.e. left, right or center
-                        loader: true, // Whether to show loader or not. True by default
-                        loaderBg: '#9EC600', // Background color of the toast loader
-                        beforeShow: function () {}, // will be triggered before the toast is shown
-                        afterShown: function () {}, // will be triggered after the toat has been shown
-                        beforeHide: function () {}, // will be triggered before the toast gets hidden
-                        afterHidden: function () {
-                            location.reload();
-                        }  // will be triggered after the toast has been hidden
-                    });
-                },
-                error: function (xhr, ajaxOptions, thrownError) {
-                    //what to do in error
-                }
-            });
-        });
-    });
-</script>
-    </body>
+        <!-- Header -->
+    <header id="home">
+        <!-- Background Image -->
+        <div class="bg-img" style="background-image: url('./img/combo.jpg');">
+            <div class="overlay"></div>
+        </div>
+        <!-- /Background Image -->
+
+        <!-- Nav -->
+        <nav id="nav" class="navbar nav-transparent">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <!-- Logo -->
+                    <div class="navbar-brand">
+                        <a href="index.jsp">
+                            <img class="logo" src="img/pb.jpg" alt="logo">
+                            <img class="logo-alt" src="img/builder-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+
+                    <!-- Collapse nav button -->
+                    <div class="nav-collapse">
+                        <span></span>
+                    </div>
+                    <!-- /Collapse nav button -->
+                </div>
+
+                <!--  Main navigation  -->
+                <ul class="main-nav nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+
+                </ul>
+                <!-- /Main navigation -->
+
+            </div>
+        </nav>
+        <!-- /Nav -->
+        <!-- home wrapper -->
+        <div class="home-wrapper">
+            <div class="container">
+                <div class="row">
+
+                    <!-- home content -->
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="home-content" >
+                            <h1 class="white-text animated bounce">Parabens !!!</h1>
+                            <h2 class="row col-md-12" style="color: #ffffff;text-shadow: 1px 2px #ff5614"> Você acabou de realizar o pedido de um dos nossos deliciosos combos por apenas R$ ${combo.preco} </h2>
+                            <h3 class="row col-md-12" style="color: #ffffff;text-shadow: 1px 2px #ff5614"> Abaixo segue a descrição do seu combo.</h3>
+                            <div class="shadowBlack">
+                                <h3 class=" row white-text animated slideInLeft ">Sanduiche : ${combo.sanduiche}</h3>
+                                <h3 class=" row white-text animated slideInRight ">Acompanhamento : ${combo.acompanhamento}</h3>
+                                <h3 class=" row white-text animated slideInLeft ">Brinquedo : ${combo.brinquedo}</h3>
+                                <h3 class=" row white-text animated slideInRight">Bebida : ${combo.bebida}</h3>
+                                <h3 class=" row white-text animated slideInLeft ">Molho : ${combo.molho}</h3>
+                                <h4 class="white-text  col-md-12 text-center animated infinite tada" style="color: #ffffff;text-shadow: 1px 2px #ff5614">
+                                    Aproveite e volte sempre!!! </h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /home content -->
+
+                </div>
+            </div>
+            <!-- /home wrapper -->
+            <div >
+                <button class="white-btn " ><a href="index.jsp">HOME</a></button>
+            </div>
+        </div>
+
+    </header>
+</body>
 </html>
