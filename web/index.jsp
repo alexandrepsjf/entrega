@@ -291,14 +291,14 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                             <img class="img-responsive" src="./img/alexandre.jpg" alt="">
                             <div class="overlay">
                                 <div class="team-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="team-content">
-                            <h3>Alexandre de paula- O Bão</h3>
+                            <h3>Alexandre de Paula - O Bão</h3>
                             <span>Web Designer</span>
                         </div>
                     </div>
@@ -311,14 +311,14 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                             <img class="img-responsive" src="./img/icaro.jpg" alt="">
                             <div class="overlay">
                                 <div class="team-social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="team-content">
-                            <h3>Icaro Alvarenga - O lord</h3>
+                            <h3>Ícaro Alvarenga - O Lord</h3>
                             <span>Web Designer</span>
                         </div>
                     </div>
@@ -339,17 +339,17 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                 <div class="col-md-12">
                     <!-- footer logo -->
                     <div class="footer-logo">
-                        <a href="index.html"><img src="img/1.png" alt="logo"></a>
+                        <a href="index.jsp"><img src="img/1.png" alt="logo"></a>
                     </div>
                     <!-- /footer logo -->
                     <!-- footer follow -->
                     <ul class="footer-follow">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-android" style="font-size:40px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" style="font-size:40px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g" style="font-size:40px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram" style="font-size:40px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin" style="font-size:40px;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube" style="font-size:40px;"></i></a></li>
                     </ul>
                     <!-- /footer follow -->
                     <!-- footer copyright -->
