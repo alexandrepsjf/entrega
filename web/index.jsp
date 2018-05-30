@@ -55,7 +55,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
         <!-- Header -->
     <header id="home">
         <!-- Background Image -->
-        <div class="bg-img" style="background-image: url('./img/capa.png');">
+        <div class="bg-img" style="background-image: url('./img/3.jpg');">
             <div class="overlay"></div>
         </div>
         <!-- /Background Image -->
@@ -88,16 +88,13 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 
                 </ul>
                 <!-- /Main navigation -->
-
             </div>
         </nav>
         <!-- /Nav -->
-
         <!-- home wrapper -->
         <div class="home-wrapper">
             <div class="container">
                 <div class="row">
-
                     <!-- home content -->
                     <div class="col-md-10 col-md-offset-1">
                         <div class="home-content" >
@@ -113,19 +110,67 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 
                     </div>
                     <!-- /home content -->
-
                 </div>
             </div>
             <!-- /home wrapper -->
             <div >
-                <button class="white-btn " ><a href="#combos"> PEÇA 1 COMBO</a></button>
+                <button class="white-btn " ><a href="#combos"> PEÇA SEU COMBO</a></button>
                 <button  class=" white-btn" data-toggle="modal" data-target="#exampleModalCenter2">SAIBA MAIS</button>
             </div>
         </div>
 
     </header>
     <!-- /Header -->
-    <!-- About -->
+        <!-- Why Choose Us -->
+    <div id="features" class="section md-padding bg-grey ">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- why choose us content -->
+                <div class="col-md-6">
+                    <div class="section-header">
+                        <h2 class="title">Quando usar o padrão builder</h2>
+                    </div>
+                    <h4>Separar a construção da representação segue a mesma ideia dos padrões Factory Method e Abstract Factory. No entanto o padrão Builder permite separar os passos de construção de um objeto em pequenos métodos.</h4>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>No padrão Builder temos também uma interface comum para todos os objetos que constroem outros objetos. Essa interface Builder define todos os passos necessários para construir um objeto.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>A ideia principal do padrão Builder é dividir em pequenos passos a construção do objeto.O Builder foca na divisão de responsabilidades na construção do Produto.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>No padrão Builder nós definimos quais os passos devem ser executados (na classe Builder) e como eles devem ser executados (na classe Director).</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa fa-check"></i>
+                        <p>Várias classes Director também podem reutilizar classes Builder. Como o Builder separa bem os passos de construção, o Director tem um controle bem maior sobre a produção do Produto.</p>
+                    </div>
+                </div>
+                <!-- /why choose us content -->
+                <!-- About slider -->
+                <div class="col-md-6">
+                    <br/>
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
+                    <br/>
+                    <div id="about-slider" class="owl-carousel owl-theme">
+                        <img class="img-responsive" src="./img/1.png" alt="">
+                        <img class="img-responsive" src="./img/2.png" alt="">
+                        <img class="img-responsive" src="./img/5.jpg" alt="">
+                        <img class="img-responsive" src="./img/representation.jpg" alt="">
+                    </div>
+                </div>
+                <!-- /About slider -->
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+        <!-- About -->
     <div  class="section md-padding">
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -160,13 +205,9 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                         <h4>Padrão Builder</h4>
                         <img src="./img/imgModal.png" style="width: 90%;height: auto;" class="animated  zoomIn" id="imagem">
                         <p>Onde:</p>
-
                         <p><span class="font-weight-bold"> Director</span> utiliza a interface de Builder para construir um determinado objeto. Em outras palavras, criamos um Director e dizemos a ele qual Builder concreto iremos utilizar para construir o produto.</p>
-
                         <p>Builder especifica uma interface para criação das partes do produto. Pode ser implementado como interface ou como classe-abstrata. No diagrama, temos apenas “BuildPart”, mas na prática temos vários métodos, cada um criando uma parte do produto.</p>
-
                         <p>ConcreteBuilder implementa uma forma de construir o produto, parte por parte, seguindo a abstração Builder. ConcreteBuilder guarda a representação do objeto-produto e fornece um método para recuperá-lo, após sua construção (no diagrama, este método é o “getOutPut”).</p>
-
                         <p>Product é o objeto-produto da construção “orquestrada” pelo Builder.</p>
                         <a href="http://designpatternsphp.readthedocs.io/pt_BR/latest/Creational/Builder/README.html" target="_blank">ler mais ...</a>
                     </div>
@@ -176,81 +217,22 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /About -->
-
-
-
-
-    <!-- Why Choose Us -->
-    <div id="features" class="section md-padding bg-grey">
+    </div>  
+    <!-- /Modal -->
         <!-- Container -->
-        <div class="container">
+        <div class="container  " id="combos"  style="background-color: #c1ffd9;">
+           
             <!-- Row -->
             <div class="row">
-                <!-- why choose us content -->
-                <div class="col-md-6">
-                    <div class="section-header">
-                        <h2 class="title">Quando usar o padrão builder</h2>
-                    </div>
-                    <h4>Separar a construção da representação segue a mesma ideia dos padrões Factory Method e Abstract Factory. No entanto o padrão Builder permite separar os passos de construção de um objeto em pequenos métodos.</h4>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>No padrão Builder temos também uma interface comum para todos os objetos que constroem outros objetos. Essa interface Builder define todos os passos necessários para construir um objeto.</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>A ideia principal do padrão Builder é dividir em pequenos passos a construção do objeto.O Builder foca na divisão de responsabilidades na construção do Produto.</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>No padrão Builder nós definimos quais os passos devem ser executados (na classe Builder) e como eles devem ser executados (na classe Director).</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fa fa-check"></i>
-                        <p>Várias classes Director também podem reutilizar classes Builder. Como o Builder separa bem os passos de construção, o Director tem um controle bem maior sobre a produção do Produto.</p>
-                    </div>
-                </div>
-                <!-- /why choose us content -->
-
-                <!-- About slider -->
-                <div class="col-md-6">
-                    <br/>
-                    <br/><br/>
-                    <br/><br/>
-                    <br/><br/>
-                    <br/>
-                    <div id="about-slider" class="owl-carousel owl-theme">
-                        <img class="img-responsive" src="./img/1.png" alt="">
-                        <img class="img-responsive" src="./img/2.png" alt="">
-                        <img class="img-responsive" src="./img/5.jpg" alt="">
-                        <img class="img-responsive" src="./img/representation.jpg" alt="">
-                    </div>
-                </div>
-                <!-- /About slider -->
-
-            </div>
-            <!-- /Row -->
-
-        </div>
-        <!-- /Container -->
-        <!-- Container -->
-        <div class="container" id="combos">
-
-            <!-- Row -->
-            <div class="row">
-
                 <!-- Section header -->
                 <div class="section-header text-center">
                     <h2 class="title">Escolha seu combo</h2>
                 </div>
                 <!-- /Section header -->
-
                 <!-- about -->
                 <div class="col-md-4">
                     <div class="about">
                         <i class="fas fa-dollar-sign"></i>
-
                         <h3>Combo 1</h3>
                         <p>Experimente todo o sabor por um precinho mais que especial.</p>
                         <button type="button" class="btn btn-primary" >
@@ -258,31 +240,25 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                         </button>					</div>
                 </div>
                 <!-- /about -->
-
                 <!-- about -->
                 <div class="col-md-4">
-                    <div class="about">
+                    <div class="about ">
                         <i class="fas fa-dollar-sign"></i>
-
                         <i class="fas fa-dollar-sign"></i>
-
                         <h3>Combo 2</h3>
                         <p>Na medida certa da sua fome e do seu bolso.</p>
                         <button type="button" class="btn btn-primary" >
                             <a href="FrontController?action=CriarCombo2">Peça aqui</a>
-                        </button>					</div>
+                        </button>					
+                    </div>
                 </div>
                 <!-- /about -->
-
                 <!-- about -->
                 <div class="col-md-4">
                     <div class="about">
                         <i class="fas fa-dollar-sign"></i>
-
                         <i class="fas fa-dollar-sign"></i>
-
                         <i class="fas fa-dollar-sign"></i>
-
                         <h3>Combo 3</h3>
                         <p>Para que tem muita  fome e não quer perder a qualidade.</p>
                         <button type="button" class="btn btn-primary" >
@@ -291,29 +267,23 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                     </div>
                 </div>
                 <!-- /about -->
-
             </div>
             <!-- /Row -->
-
         </div>
         <!-- /Container -->
     </div>
-    <!-- /Why Choose Us -->
+    <!-- /Why Choose Us -->    
     <!-- Team -->
     <div id="team" class="section md-padding">
-
         <!-- Container -->
         <div class="container">
-
             <!-- Row -->
             <div class="row">
-
                 <!-- Section header -->
                 <div class="section-header text-center">
                     <h2 class="title">Participantes</h2>
                 </div>
                 <!-- /Section header -->
-
                 <!-- team -->
                 <div class=" col-sm-offset-2 col-sm-4">
                     <div class="team">
@@ -334,7 +304,6 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                     </div>
                 </div>
                 <!-- /team -->
-
                 <!-- team -->
                 <div class="col-sm-4">
                     <div class="team">
@@ -408,14 +377,12 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
         </div>
     </div>
     <!-- /Preloader -->
-
     <!-- jQuery Plugins -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
 </body>
 
 </html>
