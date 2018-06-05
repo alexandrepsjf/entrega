@@ -34,6 +34,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 
         <!-- Magnific Popup -->
         <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="css/animate.min.css">
 
         <!-- Font Awesome Icon -->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -93,18 +94,22 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
         <!-- /Nav -->
         <!-- home wrapper -->
         <div class="home-wrapper">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <!-- home content -->
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-12 ">
                         <div class="home-content" >
-                            <h1 class="white-text ">Exemplo de aplicação com o padrão de projeto Builder</h1>
-                            <h3 class="row col-md-12" style="color: #ffffff;text-shadow: 1px 2px #ff5614"> “Separar a construção de um objeto complexo de sua representação de modo que o mesmo processo de construção possa criar diferentes representações.”							</h3>
+                            <h1 class="white-text  col-md-10 col-md-offset-1 ">Exemplo de aplicação com o padrão de projeto Builder</h1>
+                            <h3 class="row col-md-10 col-md-offset-1" style="color: #ffffff;text-shadow: 1px 2px #ff5614"> “Separar a construção de um objeto complexo de sua representação de modo que o mesmo processo de construção possa criar diferentes representações.”							</h3>
                             <div class="shadowBlack">
-                                <h3 class=" row white-text  ">Fique por dentro</h3>
-                                <h4 class="white-text col-md-6 text-justify">
-                                    Os padrões de projetos, no seu começo, eram apenas conjuntos de blocos de códigos populares que muitas vezes eram compartilhados sem muita “importância” entre desenvolvedores e designers de aplicação.Com a utilização de padrões de projetos em nossos sistemas podemos obter um melhor rendimento em nossas aplicações, fazendo uso de reutilização de código, maior desacoplamento entre as classes, dentre outros pontos favoráveis que possamos imaginar.</h4>
-                                <h4 class="white-text col-md-6 text-justify"> Com base nisso, podemos ter aplicações robustas e de alta qualidade, além de deixarmos um código mais organizado e entendível no caso de uma manutenção. No entanto, é necessário que saibamos como melhor aplicar um determinado padrão em nossa aplicação, mas isso só acontece se compreendermos todo o processo que envolve os padrões de projetos. </h4>
+                                <h3 class="  white-text col-md-10 col-md-offset-1 ">Fique por dentro</h4>
+                                    <h4 class="white-text col-md-6 text-justify">
+                                        Os padrões de projetos, no seu começo, eram apenas conjuntos de blocos de códigos populares que muitas vezes eram compartilhados sem muita “importância” entre desenvolvedores e designers de aplicação. 
+                                        Com a utilização de padrões de projetos em nossos sistemas podemos obter um melhor rendimento em nossas aplicações, fazendo uso de reutilização de código, maior desacoplamento entre as classes, 
+                                        dentre outros pontos favoráveis que possamos imaginar.</h4>
+                                    <h4 class="white-text col-md-6 text-justify"> Com base nisso, podemos ter aplicações robustas e de alta qualidade, além de deixarmos um código mais organizado e entendível no caso de uma manutenção. No entanto, 
+                                        é necessário que saibamos como melhor aplicar um determinado padrão em nossa aplicação, mas isso só acontece se compreendermos todo o processo que envolve os padrões de projetos. 
+                                        Nesse trabalho iremos olhar a contribuição do<span style="color: red"> PADRÃO BUILDER </span>  neste contexto. </h4>
                             </div>
                         </div>
 
@@ -121,10 +126,11 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 
     </header>
     <!-- /Header -->
-        <!-- Why Choose Us -->
+    <!-- Why Choose Us -->
     <div id="features" class="section md-padding bg-grey ">
         <!-- Container -->
         <div class="container">
+
             <!-- Row -->
             <div class="row">
                 <!-- why choose us content -->
@@ -166,112 +172,75 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                     </div>
                 </div>
                 <!-- /About slider -->
+
             </div>
-            <!-- /Row -->
+        </div>
+        <!-- /Row -->
+        <div class=" container md-padding">           
+            <h2 class=" col-lg-offset-4"> <i class="fa fa-bullhorn"></i> Fique ligado</h2>
+            <div class="col-md-6">                    
+                <h2><span class="font-weight-bold" style="font-family: impact;"> Vantagens</span> </h2>
+                <h4><span class="" style="font-family: impact;"> <i class="fa fa-thumbs-up"></i> </span>  Permite variar a representação interna de um produto;</h4>
+                <h4><span class="" style="font-family: impact;"> <i class="fa fa-thumbs-up"></i> </span>  Encapsula o código entre construção e representação;</h4>
+                <h4><span class="" style="font-family: impact;"> <i class="fa fa-thumbs-up"></i> </span>  Provê controle durante o processo de construção.</h4>
+            </div>
+            <div class="col-md-6">
+                <h2><span class="font-weight-bold" style="font-family: impact;"> Desvantagens </span> </h2>
+                <h4><span class="" style="font-family: impact;"> <i class="fa fa-thumbs-down"></i> </span> Requer criar um concrete builder específico para cada instância diferente do produto.</h4>
+            </div>
         </div>
         <!-- /Container -->
         <!-- About -->
-    <div  class="section md-padding">
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle2">Padrão Builder</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center ">
-                        <p>A estrutura do padrão Builder é ilustrada abaixo:</p>
-                        <h4>Padrão Builder</h4>
-                        <img src="./img/imgModal.png" style="width: 90%;height: auto;" class="animated  zoomIn" id="imagem">
-                        <p>Onde:</p>
-                        <p><span class="font-weight-bold"> Director</span> utiliza a interface de Builder para construir um determinado objeto. Em outras palavras, criamos um Director e dizemos a ele qual Builder concreto iremos utilizar para construir o produto.</p>
-                        <p>Builder especifica uma interface para criação das partes do produto. Pode ser implementado como interface ou como classe-abstrata. No diagrama, temos apenas “BuildPart”, mas na prática temos vários métodos, cada um criando uma parte do produto.</p>
-                        <p>ConcreteBuilder implementa uma forma de construir o produto, parte por parte, seguindo a abstração Builder. ConcreteBuilder guarda a representação do objeto-produto e fornece um método para recuperá-lo, após sua construção (no diagrama, este método é o “getOutPut”).</p>
-                        <p>Product é o objeto-produto da construção “orquestrada” pelo Builder.</p>
-                        <a href="http://designpatternsphp.readthedocs.io/pt_BR/latest/Creational/Builder/README.html" target="_blank">ler mais ...</a>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <div  class="section md-padding">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>  
-    <!-- /Modal -->
+            <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle2" >Padrão Builder</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center ">
+                            <p>A estrutura do padrão Builder é ilustrada abaixo:</p>
+                            <h4 >Padrão Builder</h4>
+                            <img src="./img/imgModal.png" style="width: 90%;height: auto;" class="animated  bounceInDown" id="imagem">
+                            <p>Onde:</p>
+                            <p><span class="font-weight-bold" style="font-family: impact;"> Director</span> utiliza a interface de Builder para construir um determinado objeto. Em outras palavras, criamos um Director e dizemos a ele qual Builder concreto iremos utilizar para construir o produto.</p>
+                            <p><span class="font-weight-bold" style="font-family: impact;"> Builder </span>  especifica uma interface para criação das partes do produto. Pode ser implementado como interface ou como classe-abstrata. No diagrama, temos apenas “BuildPart”, mas na prática temos vários métodos, cada um criando uma parte do produto.</p>
+                            <p><span class="font-weight-bold" style="font-family: impact;"> ConcreteBuilder </span>  implementa uma forma de construir o produto, parte por parte, seguindo a abstração Builder. ConcreteBuilder guarda a representação do objeto-produto e fornece um método para recuperá-lo, após sua construção (no diagrama, este método é o “getOutPut”).</p>
+                            <p><span class="font-weight-bold" style="font-family: impact;"> Product </span>  é o objeto-produto da construção “orquestrada” pelo Builder.</p>
+                            <a href="http://designpatternsphp.readthedocs.io/pt_BR/latest/Creational/Builder/README.html" target="_blank">ler mais ...</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- /Modal -->
         <!-- Container -->
-        <div class="container  " id="combos"  style="background-color: #c1ffd9;">
-           
-            <!-- Row -->
-            <div class="row">
-                <!-- Section header -->
-                <div class="section-header text-center">
-                    <h2 class="title">Escolha seu combo</h2>
-                </div>
-                <!-- /Section header -->
-                <!-- about -->
-                <div class="col-md-4">
-                    <div class="about">
-                        <i class="fas fa-dollar-sign"></i>
-                        <h3>Combo 1</h3>
-                        <p>Experimente todo o sabor por um precinho mais que especial.</p>
-                        <button type="button" class="btn btn-primary" >
-                            <a href="FrontController?action=CriarCombo1">Peça aqui</a>
-                        </button>					</div>
-                </div>
-                <!-- /about -->
-                <!-- about -->
-                <div class="col-md-4">
-                    <div class="about ">
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                        <h3>Combo 2</h3>
-                        <p>Na medida certa da sua fome e do seu bolso.</p>
-                        <button type="button" class="btn btn-primary" >
-                            <a href="FrontController?action=CriarCombo2">Peça aqui</a>
-                        </button>					
-                    </div>
-                </div>
-                <!-- /about -->
-                <!-- about -->
-                <div class="col-md-4">
-                    <div class="about">
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                        <i class="fas fa-dollar-sign"></i>
-                        <h3>Combo 3</h3>
-                        <p>Para que tem muita  fome e não quer perder a qualidade.</p>
-                        <button type="button" class="btn btn-primary" >
-                            <a href="FrontController?action=CriarCombo3">Peça aqui</a>
-                        </button>
-                    </div>
-                </div>
-                <!-- /about -->
-            </div>
-            <!-- /Row -->
-        </div>
-        <!-- /Container -->
-    </div>
+        
     <!-- /Why Choose Us -->    
     <!-- Team -->
     <div id="team" class="section md-padding">
@@ -330,6 +299,58 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
         <!-- /Container -->
     </div>
     <!-- /Team -->
+    <div class="container  " id="combos"  style="background-color: #c1ffd9;">
+
+            <!-- Row -->
+            <div class="row">
+                <!-- Section header -->
+                <div class="section-header text-center">
+                    <h2 class="title">Escolha seu combo</h2>
+                </div>
+                <!-- /Section header -->
+                <!-- about -->
+                <div class="col-md-4">
+                    <div class="about">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Combo 1</h3>
+                        <p>Experimente todo o sabor por um precinho mais que especial.</p>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="FrontController?action=CriarCombo1">Peça aqui</a>
+                        </button>					</div>
+                </div>
+                <!-- /about -->
+                <!-- about -->
+                <div class="col-md-4">
+                    <div class="about ">
+                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Combo 2</h3>
+                        <p>Na medida certa da sua fome e do seu bolso.</p>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="FrontController?action=CriarCombo2">Peça aqui</a>
+                        </button>					
+                    </div>
+                </div>
+                <!-- /about -->
+                <!-- about -->
+                <div class="col-md-4">
+                    <div class="about">
+                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Combo 3</h3>
+                        <p>Para que tem muita  fome e não quer perder a qualidade.</p>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="FrontController?action=CriarCombo3">Peça aqui</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- /about -->
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>
     <!-- Footer -->
     <footer id="footer" class="sm-padding bg-dark">
         <!-- Container -->
